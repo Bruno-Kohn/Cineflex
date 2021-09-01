@@ -1,0 +1,388 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.top {
+  background-color: #020202;
+  width: 375px;
+  height: 67px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+}
+
+.top h1 {
+  color: #fa4098;
+  font-size: 35px;
+  line-height: 39.84px;
+  font-family: "Suez One", serif;
+}
+
+.message {
+  font-family: "Suez One", serif;
+  width: 375px;
+  height: 110px;
+  position: fixed;
+  top: 67px;
+  left: 0px;
+  font-size: 24px;
+  line-height: 28px;
+  background: rgb(219, 219, 219);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.04em;
+  color: black;
+  font-weight: normal;
+  z-index: 1;
+}
+
+.container {
+  width: 375px;
+  min-height: 100vh;
+  background: rgb(219, 219, 219);
+  top: calc(67px + 110px);
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 20px;
+}
+
+.movies {
+  margin-top: 20px;
+  width: 145px;
+  height: 209px;
+  background: #ffffff;
+  box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgMovies {
+  width: 129px;
+  height: 193px;
+}
+
+.container-movie,
+.container-seats {
+  width: 375px;
+  min-height: calc(100vh - (67px + 110px));  /* alterar para auto depois */
+  background: rgb(219, 219, 219);
+  top: calc(67px + 110px);
+  position: relative;
+  margin-bottom: 265px;
+}
+
+.container-selected-movie {
+  position: fixed;
+  width: 375px;
+  height: 117px;
+  left: 0px;
+  bottom: 0px;
+  background: black;
+  display: flex;
+  align-items: center;
+}
+
+.image-info {
+  height: 100%;
+  width: 23%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-info {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 77%;
+}
+
+.title-info-seats {
+  height: 100%;
+  width: 77%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.selected-movie {
+  width: 64px;
+  height: 89px;
+  background: #ffffff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgMovieSelected {
+  width: 48px;
+  height: 72px;
+}
+
+.movie-title {
+  font-size: 21px;
+  line-height: 30px;
+  color: #fa4098;
+  padding-left: 20px;
+  font-family: "Suez One", serif;
+}
+
+.session-infos {
+  padding: 5px 0;
+  margin-bottom: 15px;
+}
+
+.session-day {
+  padding-left: 20px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+
+.session-time-box {
+  padding: 20px;
+  display: flex;
+}
+
+.session-time {
+  margin-right: 8px;
+  width: 83px;
+  height: 43px;
+  background: #fa4098;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.seats {
+  width: 375px;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: absolute;
+}
+
+.seat {
+  width: 26px;
+  height: 26px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3px;
+  background-color: #f7539f;
+}
+
+.index {
+  top: 270px;
+  position: absolute;
+  width: 375px;
+  height: 65px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.index-item {
+  width: 100px;
+  height: 100%;
+}
+
+.index-item-top {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.index-item-bottom {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.index-item-colorgreen {
+  width: 25px;
+  height: 25px;
+  background: #8dd7cf;
+  border: 1px solid #1aae9e;
+  border-radius: 17px;
+}
+
+.index-item-available {
+  width: 25px;
+  height: 25px;
+  background: #f7539f;
+  border: 1px solid #fa4098;
+  border-radius: 17px;
+}
+
+.index-item-coloryellow {
+  width: 25px;
+  height: 25px;
+  background: #fbe192;
+  border: 1px solid #f7c52b;
+  border-radius: 17px;
+}
+
+.infos {
+  width: 375px;
+  height: 330px;
+  top: 300px;
+  position: absolute;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.name,
+.cpf {
+  width: 327px;
+  height: 90px;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 20px 0 0 20px;
+}
+
+.box-text-name,
+.box-text-cpf {
+  width: 327px;
+  height: 51px;
+  background: #ffffff;
+  border: 1px solid #d5d5d5;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+.get-seats {
+  font-family: "Suez One", serif;
+  position: absolute;
+  width: 225px;
+  height: 42px;
+  background: #fa4098;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.04em;
+  top: 240px;
+  left: 73px;
+}
+
+.message-success {
+  width: 375px;
+  height: 110px;
+  position: fixed;
+  top: 67px;
+  left: 0px;
+  font-size: 24px;
+  line-height: 28px;
+  background: rgb(219, 219, 219);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.04em;
+  color: black;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.container-success {
+  width: 375px;
+  min-height: calc(100vh - (67px + 110px)); 
+  top: calc(67px + 110px);
+  position: relative;
+  background: rgb(219, 219, 219);
+}
+
+.movie-data,
+.tickets-data,
+.client-data {
+  width: 375px;
+  height: auto;
+  margin-bottom: 40px;
+  padding-left: 20px;
+}
+
+.title h2 {
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.04em;
+  font-weight: bold;
+}
+
+.title {
+  height: auto;
+  font-size: 22px;
+}
+
+.movie-success,
+.seat-tickets,
+.name-customer,
+.cpf-customer,
+.session-success,
+.tickets-ordered {
+  height: auto;
+  margin: 5px 0;
+}
+
+.movie-success h2,
+.session-success h2,
+.seat-tickets h2,
+.name-customer h2,
+.cpf-customer h2,
+.session-success h2,
+.tickets-ordered h2 {
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0.04em;
+}
+
+.back-to-home {
+  margin-left: calc((375px - 225px) / 2);
+  margin-right: calc((375px - 225px) / 2);
+  width: 225px;
+  height: 42px;
+  background: #fa4098;
+  border-radius: 8px;
+  border: none;
+}
+
+.back-to-home h2 {
+  font-family: "Suez One", serif;
+  font-size: 16px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.04em;
+}
+
